@@ -6,7 +6,7 @@ This is the source for [rygfitnesstralee.com](https://www.rygfitnesstralee.com) 
 
 ## How this is hosted
 
-Static HTML, no build step. Two ways to ship it:
+Static HTML, no build step. Two ways to ship it: 
 
 ### Option A — single bundled file (simplest)
 `index.html` in this folder is a single self-contained file with all CSS, JS and fonts inlined. Just drop it on any static host (GitHub Pages, Netlify, Cloudflare Pages, etc.) and you're done.

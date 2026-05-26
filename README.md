@@ -6,13 +6,14 @@ This is the source for [rygfitnesstralee.com](https://www.rygfitnesstralee.com) 
 
 ## How this is hosted
 
-Static HTML, no build step. Two ways to ship it: 
+Static HTML, no build step.
 
-### Option A — single bundled file (simplest)
-`index.html` in this folder is a single self-contained file with all CSS, JS and fonts inlined. Just drop it on any static host (GitHub Pages, Netlify, Cloudflare Pages, etc.) and you're done.
+GitHub Pages serves the root `index.html`. That file loads the editable source
+files from `src/`, so both the root `index.html` and the `src/` folder are part
+of the live site.
 
-### Option B — source files
-The `src/` folder has the original `.jsx` and `.html` files. Edit those when content changes (new schedule, new testimonials), then re-bundle into `index.html`.
+When content changes, edit the relevant file in `src/` and commit it. There is
+no bundling step.
 
 ## Updating the site
 

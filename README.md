@@ -26,7 +26,7 @@ The most common changes:
 | About Janet | `src/website-v4-sections-2.jsx` → `AboutSection` |
 | FAQ | `src/website-v4-app.jsx` → `FAQ` array |
 
-## Brand tokens
+## Brand tokens 
 
 ```
 Cream       #EFE8D6   Background

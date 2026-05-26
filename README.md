@@ -1,5 +1,5 @@
 # RYG Fitness — Website
-
+ 
 Small classes for women, in the heart of Tralee.
 
 This is the source for [rygfitnesstralee.com](https://www.rygfitnesstralee.com) — a single-page site built around the new RYG brand (Kerry palette, fuchsia motif, "chat first" voice).

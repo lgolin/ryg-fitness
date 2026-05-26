@@ -2,7 +2,7 @@
  
 Small classes for women, in the heart of Tralee.
 
-This is the source for [rygfitnesstralee.com](https://www.rygfitnesstralee.com) — a single-page site built around the new RYG brand (Kerry palette, fuchsia motif, "chat first" voice).
+This is the source for [ryg.ie](https://ryg.ie) — a single-page site built around the new RYG brand (Kerry palette, fuchsia motif, "chat first" voice).
 
 ## How this is hosted
 
@@ -11,6 +11,8 @@ Static HTML, no build step.
 GitHub Pages serves the root `index.html`. That file loads the editable source
 files from `src/`, so both the root `index.html` and the `src/` folder are part
 of the live site.
+
+The custom domain is configured through the root `CNAME` file.
 
 When content changes, edit the relevant file in `src/` and commit it. There is
 no bundling step.

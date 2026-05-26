@@ -149,7 +149,6 @@ function LocationSection() {
             </div>
           </div>
 
-          {/* Map placeholder — embed via image-slot OR a real Google embed */}
           <div style={{
             background: RYG.cream,
             borderRadius: 22,

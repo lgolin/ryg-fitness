@@ -101,20 +101,40 @@ function ScheduleSection() {
 }
 
 // ──────────────────────────────────────────────────────────
-// About Janet — real bio + portrait placeholder
+// About Janet
 // ──────────────────────────────────────────────────────────
 function AboutSection() {
   return (
     <section id="about" style={{ background: RYG.cream, padding: '96px 0', position: 'relative' }}>
       <div className="container" style={{ display: 'grid', gridTemplateColumns: 'minmax(0, 1fr) minmax(0, 1.2fr)', gap: 64, alignItems: 'center' }} id="about-grid">
         <div>
-          <image-slot
-            id="janet-portrait"
-            shape="rounded"
-            radius="22"
-            placeholder="Drop in a portrait of Janet (4:5 works best)"
-            style={{ width: '100%', aspectRatio: '4/5', display: 'block' }}
-          ></image-slot>
+          <div style={{
+            width: '100%',
+            aspectRatio: '4 / 5',
+            borderRadius: 22,
+            background: RYG.creamSoft,
+            border: `1px solid ${RYG.ink}1a`,
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            position: 'relative',
+            overflow: 'hidden',
+          }}>
+            <div style={{ position: 'absolute', top: 36, right: 34, opacity: 0.5 }}>
+              <FuchsiaInline size={120} />
+            </div>
+            <div style={{ textAlign: 'center', position: 'relative', zIndex: 1 }}>
+              <Monogram size={92} color={RYG.ink} />
+              <div style={{
+                fontFamily: 'var(--mono)',
+                fontSize: 11,
+                letterSpacing: '0.22em',
+                textTransform: 'uppercase',
+                color: RYG.inkSoft,
+                marginTop: 18,
+              }}>Janet Slye</div>
+            </div>
+          </div>
         </div>
 
         <div>

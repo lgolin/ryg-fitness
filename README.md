@@ -45,5 +45,5 @@ Mono:     JetBrains Mono
 
 ## Contact
 
-Janet Slye · +353 86 778 0990 · [rygfitnesstralee@gmail.com](mailto:rygfitnesstralee@gmail.com)
+Janet Slye · [rygfitnesstralee@gmail.com](mailto:rygfitnesstralee@gmail.com)
 [Instagram](https://instagram.com/janetslyeryg) · [Facebook](https://www.facebook.com/RYGfitnessTralee/)

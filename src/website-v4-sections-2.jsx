@@ -25,7 +25,7 @@ function ScheduleSection() {
           letterSpacing: '-0.02em',
           marginTop: 22, marginBottom: 8, color: RYG.ink,
         }}>
-          Next course <em style={{ color: RYG.hot, fontStyle: 'italic' }}>starts Monday.</em>
+          Next course <em style={{ color: RYG.hot, fontStyle: 'italic' }}>starts Monday, 25 May 2026.</em>
         </h2>
         <HandUnderline color={RYG.hot} width={260} strokeWidth={3} />
 

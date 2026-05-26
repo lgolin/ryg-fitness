@@ -222,7 +222,13 @@ function Footer() {
 
         <div style={{ marginTop: 48, paddingTop: 22, borderTop: `1px solid ${RYG.cream}22`, display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontFamily: 'var(--mono)', fontSize: 11, letterSpacing: '0.18em', textTransform: 'uppercase', color: RYG.cream, opacity: 0.65, gap: 16, flexWrap: 'wrap' }}>
           <span>© 2026 Reach Your Goals Fitness · Tralee, Co. Ciarraí</span>
-          <a href="https://www.rygfitnesstralee.com/terms-and-conditions" style={{ color: RYG.cream, textDecoration: 'none', opacity: 0.85 }}>Terms & Conditions</a>
+          <div style={{ display: 'flex', gap: 18, alignItems: 'center', flexWrap: 'wrap' }}>
+            <a href="https://www.rygfitnesstralee.com/terms-and-conditions" style={{ color: RYG.cream, textDecoration: 'none', opacity: 0.85 }}>Terms & Conditions</a>
+            <span>
+              Made with love by{' '}
+              <a href="https://github.com/lgolin" target="_blank" rel="noopener noreferrer" style={{ color: RYG.cream, textDecoration: 'none', opacity: 0.85 }}>lgolin</a>
+            </span>
+          </div>
         </div>
       </div>
     </footer>

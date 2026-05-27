@@ -73,8 +73,8 @@ function Hero() {
           color: RYG.ink,
           maxWidth: 1100,
         }}>
-          Small classes <br/>
-          for women — <br/>
+          Friendly fitness <br/>
+          classes for women — <br/>
           <em style={{ color: RYG.hot, fontStyle: 'italic' }}>at your own pace.</em>
         </h1>
 
@@ -88,7 +88,7 @@ function Hero() {
           marginTop: 28, marginBottom: 36,
         }}>
           Pilates, Total Body Circuits and Mature Movers in the heart of Tralee.
-          No mirrors. No rush. A small room of women, moving together.
+          No mirrors. No rush. A room of women, moving together.
         </p>
 
         <div style={{ display: 'flex', gap: 16, flexWrap: 'wrap', alignItems: 'center' }}>
@@ -129,7 +129,7 @@ function Welcome() {
             fontFamily: 'var(--sans)', fontSize: 17, lineHeight: 1.65,
             color: RYG.ink, maxWidth: 520,
           }}>
-            RyG is small classes for women in Tralee. Every shape, every decade, every pace.
+            RyG is friendly fitness classes for women in Tralee. Every shape, every decade, every pace.
             If you've not done a class in a while — or if the gym has never felt like yours —
             this is the place. We move together, we chat between sets, and we leave a bit stronger
             than we came in.
@@ -146,7 +146,7 @@ function Welcome() {
               What we are
             </div>
             <ul style={{ margin: 0, padding: 0, listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 8 }}>
-              {['A small class for women', 'Pilates · Circuits · Mature Movers', 'At your own pace, always', 'Adapted to every level', 'In the centre of Tralee'].map(it => (
+              {['A friendly room for women', 'Pilates · Circuits · Mature Movers', 'At your own pace, always', 'Adapted to every level', 'In the centre of Tralee'].map(it => (
                 <li key={it} style={{ fontFamily: 'var(--serif)', fontSize: 22, lineHeight: 1.25, color: RYG.ink }}>{it}</li>
               ))}
             </ul>

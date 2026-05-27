@@ -151,7 +151,7 @@ function AboutSection() {
           <div style={{ fontFamily: 'var(--sans)', fontSize: 17, lineHeight: 1.65, color: RYG.ink, display: 'flex', flexDirection: 'column', gap: 16 }}>
             <p style={{ margin: 0 }}>
               I've been teaching in Tralee for ten years, and I've spent fifteen in fitness altogether.
-              I built RyG to be the room I'd want to walk into — small, friendly, no shouting, and adapted
+              I built RyG to be the room I'd want to walk into — friendly, no shouting, and adapted
               to whoever turns up.
             </p>
             <p style={{ margin: 0 }}>

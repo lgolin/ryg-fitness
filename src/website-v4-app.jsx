@@ -18,7 +18,7 @@ const FAQ = [
   },
   {
     q: "Can I come on my own?",
-    a: "Most women do. The classes are small enough that you'll know a few names by the end of your first one.",
+    a: "Most women do. We're a friendly bunch — you'll know a few names by the end of your first class.",
   },
   {
     q: "How do I book?",
@@ -181,7 +181,7 @@ function Footer() {
           <div>
             <Monogram size={56} color={RYG.cream} />
             <p style={{ fontFamily: 'var(--serif)', fontStyle: 'italic', fontSize: 22, lineHeight: 1.35, marginTop: 16, marginBottom: 18, maxWidth: 400 }}>
-              Small classes for women. At your own pace, always.
+              Friendly fitness classes for women. At your own pace, always.
             </p>
             <div style={{ marginTop: 16 }}>
               <WhatsAppButton size="md">Chat with Janet</WhatsAppButton>

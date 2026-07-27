@@ -14,7 +14,7 @@ function NavBar({ scrolled }) {
     }}>
       <nav className="container" style={{
         display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-        padding: '14px 0',
+        paddingTop: 14, paddingBottom: 14,
       }}>
         <a href="#top" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
           <Monogram size={32} color={RYG.ink} />
@@ -26,6 +26,7 @@ function NavBar({ scrolled }) {
           {[
             { href: '#classes',   label: 'Classes' },
             { href: '#schedule',  label: 'Schedule' },
+            { href: '#dates',     label: 'Dates' },
             { href: '#about',     label: 'About' },
             { href: '#words',     label: 'Words' },
             { href: '#find-us',   label: 'Find us' },
@@ -54,12 +55,12 @@ function Hero() {
       paddingTop: 140, paddingBottom: 80,
       position: 'relative', overflow: 'hidden',
     }}>
-      {/* Decorative fuchsia sprig top-right */}
-      <div style={{ position: 'absolute', top: 110, right: 60, opacity: 0.7, pointerEvents: 'none' }}>
-        <FuchsiaInline size={140} />
+      {/* Lead motif — dumbbell */}
+      <div style={{ position: 'absolute', top: 150, right: -30, opacity: 0.9, pointerEvents: 'none' }} className="hide-on-mobile">
+        <Dumbbell color={RYG.ink} size={120} style={{ transform: 'rotate(-12deg)' }} />
       </div>
-      <div style={{ position: 'absolute', bottom: -40, left: -20, opacity: 0.5, pointerEvents: 'none' }} className="hide-on-mobile">
-        <FuchsiaInline size={120} style={{ transform: 'scaleX(-1) rotate(15deg)' }} />
+      <div style={{ position: 'absolute', bottom: 30, right: 90, opacity: 0.35, pointerEvents: 'none' }} className="hide-on-mobile">
+        <Dumbbell color={RYG.leaf} size={64} style={{ transform: 'rotate(8deg)' }} />
       </div>
 
       <div className="container">
@@ -177,35 +178,35 @@ const CLASSES = [
   {
     id: 'pilates',
     name: 'Pilates',
-    blurb: 'Strength, control and breath. Brilliant for posture, balance and the lower back. Both morning and evening classes each term.',
+    blurb: 'A 45-minute mat class building strength, control and breath. Brilliant for posture, balance, flexibility and the lower back — and a real help with stress. Morning and evening classes each term.',
     for: 'For every level — beginners welcome.',
     motif: 'pilates',
   },
   {
     id: 'circuits',
     name: 'Total Body Circuits',
-    blurb: 'A full-body workout with a warm-up, station rounds, and a stretch to finish. The "2-minute challenge" at the end is a class favourite.',
+    blurb: 'A 45-minute full-body workout — warm-up, station rounds, then a long stretch to finish. Cardio, strength and core, adapted to your level. The "2-minute challenge" at the end is a class favourite.',
     for: 'For anyone who wants energy + variety.',
     motif: 'circuits',
   },
   {
     id: 'mature',
     name: 'Mature Movers',
-    blurb: 'A gentle class focused on strength, balance and mobility. Designed around what the body actually needs as it changes.',
+    blurb: 'A gentle 45-minute class for strength, balance, mobility and bone health — designed around what the body actually needs as it changes. Chair options for everything.',
     for: 'For the 60s, 70s, and anyone who wants gentler.',
     motif: 'mature',
   },
   {
     id: 'pt',
     name: 'Personal Training',
-    blurb: 'One-to-one sessions built around you. A holistic approach that supports women through every life stage.',
+    blurb: 'One-hour one-to-one sessions built around you, with a programme to follow between them. A holistic approach supporting women through every life stage — perimenopause, menopause, pregnancy and beyond.',
     for: 'For specific goals — bones, recovery, life changes.',
     motif: 'pt',
   },
   {
     id: 'custom',
     name: 'Custom Classes',
-    blurb: 'Bespoke fitness for local businesses, organisations and community groups. Designed around your group\'s needs.',
+    blurb: 'Bespoke fitness for local businesses, organisations and community groups around Tralee — designed around your group\'s needs, at your place or mine.',
     for: 'For your team, club or community.',
     motif: 'custom',
   },
@@ -243,8 +244,8 @@ function ClassesSection() {
               position: 'relative',
               minHeight: 320,
             }}>
-              <div style={{ position: 'absolute', top: 24, right: 24, opacity: 0.75 }}>
-                <FuchsiaInline size={50} stem={RYG.leaf} bell={i === 0 ? RYG.hot : i === 1 ? RYG.sun : i === 2 ? RYG.hot : i === 3 ? RYG.accent : RYG.leaf} />
+              <div style={{ position: 'absolute', top: 26, right: 26, opacity: 0.85 }}>
+                <Dumbbell size={26} color={i === 0 ? RYG.hot : i === 1 ? RYG.sun : i === 2 ? RYG.leaf : i === 3 ? RYG.accent : RYG.ink} />
               </div>
 
               <div style={{ fontFamily: 'var(--mono)', fontSize: 11, letterSpacing: '0.22em', textTransform: 'uppercase', color: RYG.inkSoft }}>

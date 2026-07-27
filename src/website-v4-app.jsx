@@ -196,6 +196,7 @@ function Footer() {
               {[
                 { href: '#classes',  label: 'Classes' },
                 { href: '#schedule', label: 'Schedule & prices' },
+                { href: '#dates',    label: 'Term dates' },
                 { href: '#about',    label: 'About Janet' },
                 { href: '#words',    label: 'Testimonials' },
                 { href: '#find-us',  label: 'Find us' },
@@ -273,6 +274,7 @@ function App() {
         <Welcome />
         <ClassesSection />
         <ScheduleSection />
+        <TermDatesSection />
         <AboutSection />
         <TestimonialsSection />
         <FaqSection />

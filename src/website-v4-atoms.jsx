@@ -8,7 +8,7 @@ const RYG = {
   creamSoft: '#DDD3B8',
   ink:       '#2E3530',
   inkSoft:   '#5A6359',
-  hot:       '#C66A6E',  // Deora Dé fuchsia pink
+  hot:       '#C66A6E',  // Kerry rose accent
   sun:       '#D9B36A',
   leaf:      '#6A8170',
   accent:    '#5D7D7C',
@@ -34,28 +34,25 @@ function Monogram({ size = 40, color = RYG.ink, italicMid = true }) {
   );
 }
 
-// Filled fuchsia bell — single bloom for inline use (matches v4 Fuchsia).
-function FuchsiaInline({ stem = RYG.leaf, bell = RYG.hot, size = 60, style }) {
-  const Bloom = (transform) => (
-    <g transform={transform}>
-      <path d="M0 -2 L 0 4" stroke={stem} strokeWidth="2" strokeLinecap="round" />
-      <path d="M0 4 Q -18 -2 -22 14 Q -10 6 -2 8 Z" fill={bell} />
-      <path d="M0 4 Q 18 -2 22 14 Q 10 6 2 8 Z" fill={bell} />
-      <path d="M0 4 Q -10 0 -12 12 Q -4 8 0 10 Z" fill={bell} opacity="0.9" />
-      <path d="M0 4 Q 10 0 12 12 Q 4 8 0 10 Z" fill={bell} opacity="0.9" />
-      <path d="M-12 10 Q -16 26 -10 38 Q -4 44 0 44 Q 4 44 10 38 Q 16 26 12 10 Q 6 14 0 14 Q -6 14 -12 10 Z" fill={bell} />
-      <line x1="-5" y1="44" x2="-6" y2="58" stroke={bell} strokeWidth="1.5" strokeLinecap="round" />
-      <line x1="-2" y1="44" x2="-2" y2="62" stroke={bell} strokeWidth="1.5" strokeLinecap="round" />
-      <line x1="2"  y1="44" x2="2"  y2="62" stroke={bell} strokeWidth="1.5" strokeLinecap="round" />
-      <line x1="5"  y1="44" x2="6"  y2="58" stroke={bell} strokeWidth="1.5" strokeLinecap="round" />
-    </g>
-  );
+// ──────────────────────────────────────────────────────────
+// Dumbbell — the LEAD brand motif. Horizontal silhouette with
+// plate caps + knurled grip. Big (120–220) for hero/watermark,
+// small (20–50) beside labels. Fuchsia is now a supporting detail only.
+// ──────────────────────────────────────────────────────────
+function Dumbbell({ color = RYG.ink, size = 40, style }) {
+  const w = size * (64 / 22);
   return (
-    <svg viewBox="0 0 100 180" width={size * 0.55} height={size} style={style} fill="none">
-      <path d="M50 4 Q 50 35 50 70" stroke={stem} strokeWidth="2.2" strokeLinecap="round" />
-      <ellipse cx="40" cy="28" rx="9" ry="3.2" fill={stem} transform="rotate(-32 40 28)" opacity="0.85" />
-      <ellipse cx="60" cy="46" rx="9" ry="3.2" fill={stem} transform="rotate(32 60 46)" opacity="0.85" />
-      {Bloom('translate(50 70)')}
+    <svg viewBox="0 0 64 22" width={w} height={size} style={style} fill="none" aria-hidden="true">
+      <rect x="0" y="1" width="7" height="20" rx="2" fill={color} />
+      <rect x="7" y="5" width="3" height="12" rx="0.8" fill={color} />
+      <rect x="10" y="8" width="44" height="6" rx="1" fill={color} />
+      <line x1="16" y1="9.5" x2="16" y2="12.5" stroke="rgba(255,255,255,0.18)" strokeWidth="0.6" />
+      <line x1="24" y1="9.5" x2="24" y2="12.5" stroke="rgba(255,255,255,0.18)" strokeWidth="0.6" />
+      <line x1="32" y1="9.5" x2="32" y2="12.5" stroke="rgba(255,255,255,0.18)" strokeWidth="0.6" />
+      <line x1="40" y1="9.5" x2="40" y2="12.5" stroke="rgba(255,255,255,0.18)" strokeWidth="0.6" />
+      <line x1="48" y1="9.5" x2="48" y2="12.5" stroke="rgba(255,255,255,0.18)" strokeWidth="0.6" />
+      <rect x="54" y="5" width="3" height="12" rx="0.8" fill={color} />
+      <rect x="57" y="1" width="7" height="20" rx="2" fill={color} />
     </svg>
   );
 }
@@ -118,7 +115,7 @@ function HandUnderline({ color = RYG.hot, width = 220, strokeWidth = 3 }) {
 window.RYG = RYG;
 window.WA_URL = WA_URL;
 window.Monogram = Monogram;
-window.FuchsiaInline = FuchsiaInline;
+window.Dumbbell = Dumbbell;
 window.WhatsAppIcon = WhatsAppIcon;
 window.WhatsAppButton = WhatsAppButton;
 window.SectionStamp = SectionStamp;

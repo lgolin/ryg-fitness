@@ -13,8 +13,8 @@ const SCHEDULE = [
 function ScheduleSection() {
   return (
     <section id="schedule" style={{ background: RYG.creamSoft, padding: '96px 0', position: 'relative', overflow: 'hidden' }}>
-      <div style={{ position: 'absolute', top: 40, right: 40, opacity: 0.55 }} className="hide-on-mobile">
-        <FuchsiaInline size={130} />
+      <div style={{ position: 'absolute', top: 56, right: -20, opacity: 0.75 }} className="hide-on-mobile">
+        <Dumbbell color={RYG.ink} size={92} style={{ transform: 'rotate(-8deg)' }} />
       </div>
 
       <div className="container">
@@ -25,7 +25,7 @@ function ScheduleSection() {
           letterSpacing: '-0.02em',
           marginTop: 22, marginBottom: 8, color: RYG.ink,
         }}>
-          Next course <em style={{ color: RYG.hot, fontStyle: 'italic' }}>starts Monday, 25 May 2026.</em>
+          Next course <em style={{ color: RYG.hot, fontStyle: 'italic' }}>starts Monday, 7 September 2026.</em>
         </h2>
         <HandUnderline color={RYG.hot} width={260} strokeWidth={3} />
 
@@ -38,7 +38,7 @@ function ScheduleSection() {
           }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: 18 }}>
               <span style={{ fontFamily: 'var(--mono)', fontSize: 11, letterSpacing: '0.22em', textTransform: 'uppercase', color: RYG.hot }}>
-                Weekly · 4-week course
+                Weekly · 7-week course
               </span>
               <span style={{ fontFamily: 'var(--serif)', fontStyle: 'italic', fontSize: 16, color: RYG.inkSoft }}>
                 Teach an tSolais
@@ -70,20 +70,26 @@ function ScheduleSection() {
             position: 'relative', overflow: 'hidden',
           }}>
             <div style={{ fontFamily: 'var(--mono)', fontSize: 11, letterSpacing: '0.22em', textTransform: 'uppercase', color: RYG.sun }}>
-              Prices · 4-week course
+              Prices · 7-week course
             </div>
 
-            <div style={{ display: 'flex', flexDirection: 'column', gap: 22, marginTop: 24 }}>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 20, marginTop: 24 }}>
               <div>
                 <div style={{ fontFamily: 'var(--serif)', fontSize: 22, color: RYG.cream }}>Pilates</div>
-                <div style={{ fontFamily: 'var(--serif)', fontSize: 52, color: RYG.sun, lineHeight: 1.0, marginTop: 2 }}>€45</div>
-                <div style={{ fontFamily: 'var(--sans)', fontSize: 13, color: RYG.cream, opacity: 0.7, marginTop: 4 }}>or €12 per class</div>
+                <div style={{ fontFamily: 'var(--serif)', fontSize: 52, color: RYG.sun, lineHeight: 1.0, marginTop: 2 }}>€80</div>
+                <div style={{ fontFamily: 'var(--sans)', fontSize: 14, color: RYG.cream, opacity: 0.8, marginTop: 4 }}>for the 7 weeks · or €12 per class</div>
               </div>
               <div style={{ height: 1, background: RYG.cream, opacity: 0.15 }} />
               <div>
                 <div style={{ fontFamily: 'var(--serif)', fontSize: 22, color: RYG.cream }}>Circuits & Mature Movers</div>
-                <div style={{ fontFamily: 'var(--serif)', fontSize: 52, color: RYG.sun, lineHeight: 1.0, marginTop: 2 }}>€40</div>
-                <div style={{ fontFamily: 'var(--sans)', fontSize: 13, color: RYG.cream, opacity: 0.7, marginTop: 4 }}>or €11 per class</div>
+                <div style={{ fontFamily: 'var(--serif)', fontSize: 52, color: RYG.sun, lineHeight: 1.0, marginTop: 2 }}>€70</div>
+                <div style={{ fontFamily: 'var(--sans)', fontSize: 14, color: RYG.cream, opacity: 0.8, marginTop: 4 }}>for the 7 weeks · or €11 per class</div>
+              </div>
+              <div style={{ height: 1, background: RYG.cream, opacity: 0.15 }} />
+              <div>
+                <div style={{ fontFamily: 'var(--serif)', fontSize: 22, color: RYG.cream }}>Personal Training</div>
+                <div style={{ fontFamily: 'var(--serif)', fontSize: 52, color: RYG.sun, lineHeight: 1.0, marginTop: 2 }}>€50</div>
+                <div style={{ fontFamily: 'var(--sans)', fontSize: 14, color: RYG.cream, opacity: 0.8, marginTop: 4 }}>per one-hour session</div>
               </div>
             </div>
           </div>
@@ -105,36 +111,34 @@ function ScheduleSection() {
 // ──────────────────────────────────────────────────────────
 function AboutSection() {
   return (
-    <section id="about" style={{ background: RYG.cream, padding: '96px 0', position: 'relative' }}>
+    <section id="about" style={{ background: RYG.creamSoft, padding: '96px 0', position: 'relative' }}>
       <div className="container" style={{ display: 'grid', gridTemplateColumns: 'minmax(0, 1fr) minmax(0, 1.2fr)', gap: 64, alignItems: 'center' }} id="about-grid">
         <div>
-          <div style={{
-            width: '100%',
-            aspectRatio: '4 / 5',
-            borderRadius: 22,
-            background: RYG.creamSoft,
-            border: `1px solid ${RYG.ink}1a`,
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            position: 'relative',
-            overflow: 'hidden',
-          }}>
-            <div style={{ position: 'absolute', top: 36, right: 34, opacity: 0.5 }}>
-              <FuchsiaInline size={120} />
+          <figure style={{ margin: 0 }}>
+            <div style={{
+              width: '100%',
+              aspectRatio: '1 / 1',
+              borderRadius: 22,
+              background: RYG.cream,
+              border: `1px solid ${RYG.ink}1a`,
+              position: 'relative',
+              overflow: 'hidden',
+            }}>
+              <img
+                src="janet.png"
+                alt="Janet Slye, personal trainer and Pilates instructor at RYG Fitness Tralee, standing arms outstretched on a mountain trail."
+                width="451" height="474"
+                style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+              />
             </div>
-            <div style={{ textAlign: 'center', position: 'relative', zIndex: 1 }}>
-              <Monogram size={92} color={RYG.ink} />
-              <div style={{
-                fontFamily: 'var(--mono)',
-                fontSize: 11,
-                letterSpacing: '0.22em',
-                textTransform: 'uppercase',
-                color: RYG.inkSoft,
-                marginTop: 18,
-              }}>Janet Slye</div>
-            </div>
-          </div>
+            <figcaption style={{
+              fontFamily: 'var(--mono)', fontSize: 12, letterSpacing: '0.2em',
+              textTransform: 'uppercase', color: RYG.inkSoft,
+              marginTop: 14, display: 'flex', alignItems: 'center', gap: 12,
+            }}>
+              <Dumbbell color={RYG.hot} size={14} /> Janet Slye · RyG Fitness
+            </figcaption>
+          </figure>
         </div>
 
         <div>
@@ -216,11 +220,11 @@ const TESTIMONIALS = [
 function TestimonialsSection() {
   return (
     <section id="words" style={{ background: RYG.leaf, color: RYG.cream, padding: '96px 0', position: 'relative', overflow: 'hidden' }}>
-      <div style={{ position: 'absolute', top: -50, right: -40, opacity: 0.16 }} className="hide-on-mobile">
-        <FuchsiaInline size={340} stem={RYG.cream} bell={RYG.cream} />
+      <div style={{ position: 'absolute', top: -30, right: -90, opacity: 0.16 }} className="hide-on-mobile">
+        <Dumbbell color={RYG.cream} size={210} style={{ transform: 'rotate(-14deg)' }} />
       </div>
-      <div style={{ position: 'absolute', bottom: -60, left: -30, opacity: 0.12 }} className="hide-on-mobile">
-        <FuchsiaInline size={280} stem={RYG.cream} bell={RYG.cream} style={{ transform: 'scaleX(-1)' }} />
+      <div style={{ position: 'absolute', bottom: -40, left: -80, opacity: 0.12 }} className="hide-on-mobile">
+        <Dumbbell color={RYG.cream} size={180} style={{ transform: 'rotate(10deg)' }} />
       </div>
 
       <div className="container" style={{ position: 'relative' }}>
